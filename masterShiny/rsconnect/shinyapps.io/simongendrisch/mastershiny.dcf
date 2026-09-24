@@ -1,0 +1,12 @@
+name: mastershiny
+title:
+username: simongendrisch
+account: simongendrisch
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17635730
+bundleId: 12362397
+url: https://simongendrisch.shinyapps.io/mastershiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

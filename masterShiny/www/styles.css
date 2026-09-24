@@ -1,0 +1,215 @@
+
+p {
+  line-height: 1.7;
+}
+
+
+.fig-description{
+  font-size: .9rem;
+  font-family: "Roboto Light";
+  
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.80), rgba(0,0,0,0));
+}
+
+.about-text p{
+  margin-bottom: 0.6rem;
+}
+.about-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Social buttons at the end of about */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 15px;
+  background-color: var(--bs-primary);
+  color: white !important;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.social-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.info-icon {
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  cursor: help;
+}
+
+.info-icon:hover { 
+  opacity: 1;
+}
+
+
+/* Leaflet styling*/
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background-color: rgba(78, 91, 156, 0.35) !important;
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background-color: rgba(78, 91, 156, 0.9) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.awesome-marker-icon-lightblue:hover {
+  cursor: help;
+}
+
+.leaflet-marker-icon:hover {
+  cursor: help;
+}
+
+.species-legend {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.species-legend img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.irs--shiny .irs-bar {
+  background: var(--bs-primary) !important;
+}
+
+.irs--shiny .irs-handle {
+  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-primary) !important;
+}
+
+.irs--shiny .irs-single {
+  background: var(--bs-primary) !important;
+}
+
+.irs--shiny .irs-single,
+.irs--shiny .irs-from,
+.irs--shiny .irs-to {
+  background: var(--bs-primary) !important;
+  color: white !important;
+}
+/* Navbar title */
+.app-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+.app-subtitle {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+
+/* Mobile adjustments */
+
+@media(max-width: 768px){
+
+  body {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* Allow navbar to wrap */
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  /* Header title */
+  .navbar-brand {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal !important;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal !important;
+    margin-bottom: 0;
+  }
+
+  .app-title h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    white-space: normal !important;
+  }
+  
+
+  .app-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.5;
+  }
+
+
+  /* Put menu below title */
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  /* Center navigation items */
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  /* Cards */
+  .card {
+    margin-bottom: 1rem;
+  }
+
+
+  /* Leaflet map */
+  .leaflet-container {
+    height: 70vh !important;
+  }
+  
+  .species-legend {
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .species-legend img {
+    width: 18px;
+  }
+  
+  
+
+}
